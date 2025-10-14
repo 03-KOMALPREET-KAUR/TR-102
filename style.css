@@ -1,0 +1,134 @@
+/* Global Styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #f9fafc;
+  color: #444;
+  line-height: 1.7;
+}
+
+/* Header */
+header {
+  background: linear-gradient(to right, #a8edea, #fed6e3);
+  color: #333;
+  text-align: center;
+  padding: 50px 20px;
+  position: relative;
+  border-bottom: 3px solid #e0e4e9;
+}
+header img.logo {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 80px;
+  height: auto;
+  background: white;
+  padding: 5px;
+  border-radius: 10px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.08);
+}
+
+/* Main */
+main {
+  max-width: 1000px;
+  margin: 50px auto;
+  padding: 0 20px;
+}
+
+section {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 16px;
+  margin-bottom: 35px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+  border: 1px solid #f0f0f0;
+  transition: transform 0.2s ease;
+}
+section:hover {
+  transform: translateY(-4px);
+}
+
+/* Day PDF Grid */
+.day-section {
+  margin-bottom: 25px;
+}
+.day-section h3 {
+  margin-bottom: 12px;
+  color: #6c63ff;
+  font-weight: 600;
+}
+.pdf-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 12px;
+  list-style: none;
+  padding-left: 0;
+}
+.pdf-grid li {
+  background: #f6f1ff;
+  padding: 14px;
+  border-radius: 10px;
+  text-align: center;
+  font-weight: 500;
+  color: #555;
+  transition: all 0.3s ease;
+  border: 1px solid #ede7f6;
+}
+.pdf-grid li:hover {
+  background: #e9f9f5;
+  color: #2f4858;
+  transform: scale(1.03);
+}
+
+a {
+  text-decoration: none;
+  color: #6c63ff;
+}
+
+/* Button */
+.button {
+  display: inline-block;
+  margin-top: 14px;
+  padding: 12px 24px;
+  background-color: #b8e4c9;
+  color: #2f4858;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+.button:hover {
+  background-color: #a1dec2;
+  transform: translateY(-2px);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 25px;
+  background: linear-gradient(to right, #fbc2eb, #a6c1ee);
+  color: #333;
+  border-top: 3px solid #e0e4e9;
+  font-size: 15px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  header img.logo {
+    width: 60px;
+  }
+
+  section {
+    padding: 20px;
+  }
+
+  .pdf-grid {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  }
+}
